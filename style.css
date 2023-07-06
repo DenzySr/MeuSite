@@ -52,6 +52,7 @@ button{
     justify-content: center;
     height: 100vh;
     padding-top: 25px;
+    width: 100%;
 }
 
 .container_infos {
@@ -64,6 +65,8 @@ button{
     flex-direction: column;
     align-items: center;
 }
+
+
 
 .container_infos span{
     margin-top: 15px;
@@ -95,18 +98,20 @@ button{
     width: 100%;
     padding-top: 15px;
     align-content: center;
-    font-size: 18px;
+
+    grid-gap: 12px;
+    gap: 12px;
 }
 .container_botoes .Sobre_mimBTN{
     height: 64px;
-    width: 250px;
+    width: 500px;
     border-radius: 32px;
     background: transparent;
     border: 1px solid rgb(64,64,64);
     padding: 0px;
 
     margin-bottom: 2rem;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
     color: whitesmoke;
 }
@@ -120,21 +125,21 @@ button{
     padding: 0px;
 
     margin-bottom: 2rem;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
     color: whitesmoke;
 }
 
 .container_botoes .ContatoBTN{
     height: 64px;
-    width: 250px;
+    width: 500px;
     border-radius: 32px;
     background: transparent;
     border: 1px solid rgb(64,64,64);
     padding: 0px;
 
     margin-bottom: 2rem;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
     color: whitesmoke;
 }
