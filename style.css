@@ -50,12 +50,23 @@ button{
 .container_inicial{
     display: flex;
     justify-content: center;
+    width: 100%;
     height: 100vh;
     padding-top: 25px;
-    width: 100%;
+    
 }
 
-.container_infos {
+.container_desk{
+    display: flex;
+    align-items: center;
+    max-width: 2rem;
+    width: 1200;
+    grid-gap: 12px;
+    gap: 12px;
+
+}
+
+/* .container_infos {
     height: 64px;
     border-radius: 32px;
     padding: 0;
@@ -64,7 +75,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 
 
@@ -82,7 +93,7 @@ button{
     padding-top: 25px;
     padding-bottom: 20px;
     text-align: center;
-    font-size: 150px;
+    font-size: 125px;
     font-family: 'Dancing Script';
 }
 .container_desk{
@@ -95,16 +106,15 @@ button{
     display: flex;
     align-items: center;
     justify-items: center;
-    width: 100%;
     padding-top: 15px;
     align-content: center;
-
     grid-gap: 12px;
     gap: 12px;
 }
 .container_botoes .Sobre_mimBTN{
     height: 64px;
-    width: 500px;
+    max-width: 200px;
+    width: 125px;
     border-radius: 32px;
     background: transparent;
     border: 1px solid rgb(64,64,64);
@@ -118,7 +128,8 @@ button{
 
 .container_botoes .Meus_ProjetosBTN{
     height: 64px;
-    width: 500px;
+    max-width: 200px;
+    width: 125px;
     border-radius: 32px;
     background: transparent;
     border: 1px solid rgb(64,64,64);
@@ -132,7 +143,8 @@ button{
 
 .container_botoes .ContatoBTN{
     height: 64px;
-    width: 500px;
+    max-width: 200px;
+    width: 125px;
     border-radius: 32px;
     background: transparent;
     border: 1px solid rgb(64,64,64);
@@ -198,6 +210,22 @@ button{
     .nav-list.active {
         transform: translateX(0);
     }
+
+    .container_botoes{
+        flex-direction: column;
+    }
+
+    .container_botoes .Sobre_mimBTN{
+        width: 175px;
+    }
+
+    .container_botoes .Meus_ProjetosBTN{
+        width: 175px;
+    }
+
+    .container_botoes .ContatoBTN{
+        width: 175px;
+    }
     
     @keyframes navLinkFade {
         from{
@@ -220,4 +248,18 @@ button{
       .mobile-menu.active .line3 {
         transform: rotate(45deg) translate(-5px, -7px);
       }
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.card1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+   
 }
