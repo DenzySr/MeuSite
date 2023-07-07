@@ -51,7 +51,7 @@ button{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     padding-top: 25px;
     
 }
@@ -258,8 +258,60 @@ button{
 }
 
 .card1{
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/foto1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
    
+}
+.card2{
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/foto4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+   
+}
+.card3{
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/gif2.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+   
+}
+.card4{
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/foto2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+   
+}
+.card5{
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/gif4.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+   
+}
+.card6{
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/foto5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+   
+}
+
+.grid{
+
 }
