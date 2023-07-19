@@ -50,9 +50,10 @@ button{
 .container_inicial{
     display: flex;
     justify-content: center;
-    height: 100vh;
-    padding-top: 25px;
     width: 100%;
+    height: 85vh;
+    padding-top: 25px;
+    
 }
 
 /* .container_infos {
@@ -62,7 +63,6 @@ button{
     width: 156px;
     margin-bottom: 2rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
 } */
 
@@ -82,7 +82,7 @@ button{
     padding-top: 25px;
     padding-bottom: 20px;
     text-align: center;
-    font-size: 150px;
+    font-size: 125px;
     font-family: 'Dancing Script';
 }
 .container_desk{
@@ -96,10 +96,15 @@ button{
     display: flex;
     align-items: center;
     justify-items: center;
+<<<<<<< HEAD
     width: 100%;
     padding-top: 25px;
     align-content: center;
     width: 100%;
+=======
+    padding-top: 15px;
+    align-content: center;
+>>>>>>> 2c378a6c36acdc82161e0ddc2c983cbf09a2cb5b
     grid-gap: 12px;
     gap: 12px;
 }
@@ -114,7 +119,12 @@ button{
 
 .container_botoes .Sobre_mimBTN{
     height: 64px;
+<<<<<<< HEAD
     width: 200px;
+=======
+    max-width: 200px;
+    width: 125px;
+>>>>>>> 2c378a6c36acdc82161e0ddc2c983cbf09a2cb5b
     border-radius: 32px;
     background: transparent;
     border: 1px linear-gradient(90deg, #9572FC 0%, #800080 50.52%, #1a2771 100%);
@@ -137,7 +147,12 @@ button{
 
 .container_botoes .Meus_ProjetosBTN{
     height: 64px;
+<<<<<<< HEAD
     width: 200px;
+=======
+    max-width: 200px;
+    width: 125px;
+>>>>>>> 2c378a6c36acdc82161e0ddc2c983cbf09a2cb5b
     border-radius: 32px;
     background: transparent;
     border: 1px linear-gradient(90deg, #9572FC 0%, #800080 50.52%, #1a2771 100%);
@@ -160,7 +175,12 @@ button{
 
 .container_botoes .ContatoBTN{
     height: 64px;
+<<<<<<< HEAD
     width: 200px;
+=======
+    max-width: 200px;
+    width: 125px;
+>>>>>>> 2c378a6c36acdc82161e0ddc2c983cbf09a2cb5b
     border-radius: 32px;
     background: transparent;
     border: 1px linear-gradient(90deg, #9572FC 0%, #800080 50.52%, #1a2771 100%);
@@ -261,6 +281,22 @@ button{
     .nav-list.active {
         transform: translateX(0);
     }
+
+    .container_botoes{
+        flex-direction: column;
+    }
+
+    .container_botoes .Sobre_mimBTN{
+        width: 175px;
+    }
+
+    .container_botoes .Meus_ProjetosBTN{
+        width: 175px;
+    }
+
+    .container_botoes .ContatoBTN{
+        width: 175px;
+    }
     
     @keyframes navLinkFade {
         from{
@@ -283,4 +319,70 @@ button{
       .mobile-menu.active .line3 {
         transform: rotate(45deg) translate(-5px, -7px);
       }
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.card1{
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/foto1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+   
+}
+.card2{
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/foto4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+   
+}
+.card3{
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/gif2.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+   
+}
+.card4{
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/foto2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+   
+}
+.card5{
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/gif4.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+   
+}
+.card6{
+    width: 300px;
+    height: 500px;
+    background-image: url(./src/img_cards/foto5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+   
+}
+
+.grid{
+
 }
