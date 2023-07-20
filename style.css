@@ -96,15 +96,8 @@ button{
     display: flex;
     align-items: center;
     justify-items: center;
-<<<<<<< HEAD
-    width: 100%;
-    padding-top: 25px;
-    align-content: center;
-    width: 100%;
-=======
     padding-top: 15px;
     align-content: center;
->>>>>>> 2c378a6c36acdc82161e0ddc2c983cbf09a2cb5b
     grid-gap: 12px;
     gap: 12px;
 }
@@ -119,12 +112,8 @@ button{
 
 .container_botoes .Sobre_mimBTN{
     height: 64px;
-<<<<<<< HEAD
-    width: 200px;
-=======
     max-width: 200px;
     width: 125px;
->>>>>>> 2c378a6c36acdc82161e0ddc2c983cbf09a2cb5b
     border-radius: 32px;
     background: transparent;
     border: 1px linear-gradient(90deg, #9572FC 0%, #800080 50.52%, #1a2771 100%);
@@ -147,12 +136,8 @@ button{
 
 .container_botoes .Meus_ProjetosBTN{
     height: 64px;
-<<<<<<< HEAD
-    width: 200px;
-=======
     max-width: 200px;
     width: 125px;
->>>>>>> 2c378a6c36acdc82161e0ddc2c983cbf09a2cb5b
     border-radius: 32px;
     background: transparent;
     border: 1px linear-gradient(90deg, #9572FC 0%, #800080 50.52%, #1a2771 100%);
@@ -175,12 +160,8 @@ button{
 
 .container_botoes .ContatoBTN{
     height: 64px;
-<<<<<<< HEAD
-    width: 200px;
-=======
     max-width: 200px;
     width: 125px;
->>>>>>> 2c378a6c36acdc82161e0ddc2c983cbf09a2cb5b
     border-radius: 32px;
     background: transparent;
     border: 1px linear-gradient(90deg, #9572FC 0%, #800080 50.52%, #1a2771 100%);
