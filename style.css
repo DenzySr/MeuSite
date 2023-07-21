@@ -19,6 +19,15 @@ a:hover {
     opacity: 0.7;
 }
 
+
+
+p{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+
 .logo{
     font-size: 25px;
     text-transform: uppercase;
@@ -241,7 +250,7 @@ button{
 
 
 .textoResumo{
-    padding: 15px 0;
+    padding: 30px 0;
     display: flex;
     align-content: center;
     text-align:justify;
@@ -334,61 +343,3 @@ button{
     padding-bottom: 25px;
 }
 
-.card1{
-    width: 300px;
-    height: 500px;
-    background-image: url(./src/img_cards/foto1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-   
-}
-.card2{
-    width: 300px;
-    height: 500px;
-    background-image: url(./src/img_cards/foto4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-   
-}
-.card3{
-    width: 300px;
-    height: 500px;
-    background-image: url(./src/img_cards/gif2.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-   
-}
-.card4{
-    width: 300px;
-    height: 500px;
-    background-image: url(./src/img_cards/foto2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-   
-}
-.card5{
-    width: 300px;
-    height: 500px;
-    background-image: url(./src/img_cards/gif4.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-   
-}
-.card6{
-    width: 300px;
-    height: 500px;
-    background-image: url(./src/img_cards/foto5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-   
-}
-
-.grid{
-
-}
