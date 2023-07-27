@@ -50,6 +50,8 @@ nav{
 
 body{
     background-color: #1C1C1C;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -209,13 +211,72 @@ button{
 
 }
 
+.boxfoto{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+
+    transition: transform .3s;
+}
+
+.boxfoto:hover{
+    transform: scale(1.1);
+}
+
+.boxfoto::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #d400d4);
+    animation: ftRGB 5s linear infinite;
+    animation-delay: -2.5s;
+}
+
+.boxfoto::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    animation: ftRGB 5s linear infinite;
+}
+
+@keyframes ftRGB{
+
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+.boxfoto span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background-image: url(https://github.com/denzysr.png);
+    background-size: cover;
+    z-index: 1;
+}
+
+
 
 .FotoResumo{
     /* padding-top: 32px; */
     height: 100%;
     width: 120px;
     margin: auto;
-    background-image: linear-gradient(90deg, #9572FC 0%, #800080 50.52%, #1a2771 100%);
+    position: relative;
+    background: rgba(108, 11, 146, 0.5);
 
     border-radius: 50%;
 
@@ -224,11 +285,10 @@ button{
 
     transition: transform .3s;
 
-    animation-name: rgbPerfil;
-    animation-delay: 5s;
-    animation-iteration-count: infinite;   
-    animation-duration: 6s; 
+    
 }
+
+
 
 .FotoResumo img{
     width: 100%;
