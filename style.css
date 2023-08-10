@@ -323,6 +323,18 @@ button{
     text-decoration: none;
     transition: 0.3s ;
     font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.Resumo1 h2{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    justify-content: center;
 }
 
 .textoResumo{
@@ -331,6 +343,7 @@ button{
     align-content: center;
     text-align:justify;
     width: 350px;
+    text-decoration: none;
 }
 
 .resumoH{
