@@ -14,6 +14,7 @@
 
 :root {
     --dark: #111111;
+    --txtColor: whitesmoke;
 }
 
 a{
@@ -561,3 +562,45 @@ button{
 .trn-3.is-active {
     top: 0px;
 }
+
+/* .ctnd{
+    display: flex;
+    padding-bottom: 25px;
+    margin-top: 50px;
+    flex-direction: row;
+    width: 1184px;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.pjtMyLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pjtMyLinks h1{
+    color: var(--txtColor);
+    transition: all 0.3s ease-in-out;
+}
+
+.MyLinksimg{
+    background: url(./src/img_cards/ProjetoMyLinks.png) no-repeat top center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 764px;
+    height: 720px;
+    margin-top: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.MyLinksimg:hover{
+    transform: scale(0.95);
+}
+
+.pjtMyLinks h1:hover{
+    opacity: 0.75;
+} */
