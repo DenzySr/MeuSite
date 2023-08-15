@@ -2,11 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Marck+Script&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
+}
+
+:root {
+    --dark: #111111;
 }
 
 a{
@@ -29,11 +36,11 @@ p{
 }
 
 .logo{
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
 
-    font-family: 'Dancing Script';
+    /* font-family: 'Dancing Script'; */
     font-weight: 900;
 }
 
@@ -54,6 +61,7 @@ body{
     align-items: center;
     
 }
+
 
 button{
     cursor: pointer;
@@ -95,7 +103,8 @@ button{
     padding-bottom: 20px;
     text-align: center;
     font-size: 125px;
-    font-family: 'Dancing Script';
+    font-family: 'Italianno';
+    font-weight: 400;
 }
 .container_desk{
        display: flex;
@@ -223,6 +232,7 @@ button{
     border-radius: 50%;
 
     transition: transform .3s;
+    transition: all 300ms ease-in-out;
 }
 
 .boxfoto:hover{
@@ -283,7 +293,7 @@ button{
     display: flex;
     padding: 4px;
 
-    transition: transform .3s;
+    transform: scale(1.1);
 
     
 }
@@ -316,6 +326,9 @@ button{
     margin-top: 25px;
     margin-bottom: 25px;
     padding-top: 25px;
+    
+
+    transition: all 2s ease-in-out;
 }
 
 .Resumo1 h1{
@@ -325,6 +338,7 @@ button{
     font-size: 16px;
     font-weight: 400;
     text-align: justify;
+    
 }
 
 .Resumo1 h2{
@@ -354,6 +368,8 @@ button{
     width: 350px;
     font-family: sans-serif;
     text-decoration: none;
+
+    padding-bottom: 50px;
 }
 
 @media (max-width: 999px){
@@ -442,3 +458,106 @@ button{
     padding-bottom: 25px;
 }
 
+.item{
+    width: 150px;
+    height: 150px;
+    background: url(./src/CSS3.png) no-repeat top center/cover;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 25px 50px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.item:hover{
+    transform: scale(1.1);
+}
+
+.item-1{
+    background: url(./src/img_cards/gif4.gif) no-repeat top center/cover;
+    width: 240px;
+    height: 424px;
+}
+
+.item-2{
+    background: url(./src/img_cards/foto5.jpg) no-repeat top center/cover;
+    width: 240px;
+    height: 424px;
+}
+
+.item-3{
+    background: url(./src/img_cards/foto4.jpg) no-repeat top center/cover;
+    width: 240px;
+    height: 424px;
+}
+
+.item-4{
+    background: url(./src/img_cards/gif2.gif) no-repeat top center/cover;
+    width: 240px;
+    height: 424px;
+}
+
+.gpfotos1{
+    display: flex;
+    padding-bottom: 25px;
+    flex-direction: row;
+    width: 1184px;
+    justify-content:center;
+    align-items: center;
+}
+
+
+/* FADE IN AND OUT */
+
+.trn-1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background-color: var(--dark);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+
+.trn-1.is-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/* DA ESQUERDA PRA DIREITA */
+
+.trn-2{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 101;
+    background-color: var(--dark);
+    transition: 0.5s ease-out;
+}
+
+.trn-2.is-active {
+    left: 0px;
+}
+
+
+.trn-3{
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 101;
+    background-color: var(--dark);
+    transition: 0.5s ease-out;
+}
+
+.trn-3.is-active {
+    top: 0px;
+}
