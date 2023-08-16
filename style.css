@@ -15,6 +15,7 @@
 :root {
     --dark: #111111;
     --txtColor: whitesmoke;
+    --wth: white;
 }
 
 a{
@@ -569,7 +570,7 @@ button{
     right: 0;
     bottom: 0;
     z-index: 101;
-    background-color: var(--dark);
+    background-color: var(--wth);
     opacity: 0;
     pointer-events: none;
     transition: 0.5s ease-out;
@@ -590,7 +591,7 @@ button{
     width: 100%;
     bottom: 0;
     z-index: 101;
-    background-color: var(--dark);
+    background-color: var(--wth);
     transition: 0.5s ease-out;
 }
 
@@ -606,7 +607,7 @@ button{
     right: 0;
     height: 100%;
     z-index: 101;
-    background-color: var(--dark);
+    background-color: var(--wth);
     transition: 0.5s ease-out;
 }
 
