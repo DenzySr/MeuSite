@@ -73,7 +73,7 @@ button{
     justify-content: center;
     width: 100%;
     height: 50vh;
-    padding-top: 25px;
+    padding-top: 50px;
     
 }
 
@@ -111,7 +111,7 @@ button{
        display: flex;
     flex-direction: column;
     color: whitesmoke;
-    max-width: 800;
+    /* max-width: 800; */
 }
 
 .container_botoes{
@@ -223,8 +223,23 @@ button{
 
 .boxfoto{
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+
+    transition: transform .3s;
+    transition: all 300ms ease-in-out;
+}
+
+.boxfoto1{
+    position: relative;
+    width: 250px;
+    height: 250px;
     background-color: rgba(0, 0, 0, .75);
     display: flex;
     justify-content: center;
@@ -259,6 +274,29 @@ button{
     animation: ftRGB 5s linear infinite;
 }
 
+.boxfoto1:hover{
+    transform: scale(1.1);
+}
+
+.boxfoto1::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #d400d4);
+    animation: ftRGB 5s linear infinite;
+    animation-delay: -2.5s;
+}
+
+.boxfoto1::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    animation: ftRGB 5s linear infinite;
+}
+
 @keyframes ftRGB{
 
     0%{
@@ -271,6 +309,15 @@ button{
 }
 
 .boxfoto span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background-image: url(https://github.com/denzysr.png);
+    background-size: cover;
+    z-index: 1;
+}
+
+.boxfoto1 span{
     position: absolute;
     inset: 5px;
     border-radius: 50%;
@@ -315,8 +362,9 @@ button{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-bottom: 25px;
+    padding-top: 50px;
 }
 
 .Resumo1{
@@ -326,7 +374,7 @@ button{
     align-items: center;
     margin-top: 25px;
     margin-bottom: 25px;
-    padding-top: 25px;
+    padding-top: 50px;
     
 
     transition: all 2s ease-in-out;
@@ -359,6 +407,7 @@ button{
     text-align:justify;
     width: 350px;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .resumoH{
@@ -506,6 +555,8 @@ button{
     width: 1184px;
     justify-content:center;
     align-items: center;
+    padding-top: 50px;
+    margin-top: 50px;
 }
 
 
@@ -604,3 +655,11 @@ button{
 .pjtMyLinks h1:hover{
     opacity: 0.75;
 } */
+
+.titulo, .area,.boxfoto, .textoResumo, .container_botoes{
+    visibility: hidden;
+}
+
+.gpfotos1, .resumoH{
+    visibility: hidden;
+}

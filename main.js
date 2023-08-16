@@ -22,3 +22,40 @@ window.onload = () =>{
         })
     }
 }
+
+window.sr = ScrollReveal({reset: true});
+
+sr.reveal('.titulo', {duration: 3000});
+
+sr.reveal('.area', {duration: 3000});
+
+sr.reveal('.boxfoto', {
+    distance: '100px',
+    origin: 'bottom',
+    duration: 2500,
+})
+
+sr.reveal('.boxfoto1', {
+    easing: 'ease-in-out',
+    duration: 2500,
+})
+
+sr.reveal('.textoResumo', {
+    easing: 'ease-in-out',
+    duration: 2500,
+})
+
+sr.reveal('.container_botoes', {duration:3000});
+
+
+sr.reveal('.gpfotos1', {
+    distance: '100px',
+    origin: 'bottom',
+    duration: 2500,
+});
+
+sr.reveal('.resumoH', {
+    duration:2500,
+    distance: '100px',
+    origin: 'bottom',
+    });
