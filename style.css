@@ -429,7 +429,7 @@ button{
         overflow-x: hidden;
     }
     .nav-list{
-        position: fixed;
+        position: absolute;
         top: 8vh;
         right: 0;
         width: 50vw;
