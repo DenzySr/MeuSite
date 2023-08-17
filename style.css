@@ -884,3 +884,73 @@ h1, h2{
     outline: none;
     background: #d400d4;
 }
+
+.containercards{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card1{
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: #23232e;
+    justify-content: center;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.image1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pjtmylinks{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.txtcardh2{
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.desccard1{
+    color: var(--txtColor);
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+
+.btncard1{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--txtColor);
+
+    transition: 0.5s ease-in-out;
+
+    cursor: pointer;
+}
+
+.btncard1:hover{
+    transform: scale(1.1);
+}
+
+.divbuttoncard1{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
