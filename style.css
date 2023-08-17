@@ -252,6 +252,21 @@ button{
     transition: all 300ms ease-in-out;
 }
 
+.boxfotoctt1{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+
+    transition: transform .3s;
+    transition: all 300ms ease-in-out;
+}
+
 .boxfoto:hover{
     transform: scale(1.1);
 }
@@ -298,6 +313,29 @@ button{
     animation: ftRGB 5s linear infinite;
 }
 
+.boxfotoctt1:hover{
+    transform: scale(1.1);
+}
+
+.boxfotoctt1::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #d400d4);
+    animation: ftRGB 5s linear infinite;
+    animation-delay: -2.5s;
+}
+
+.boxfotoctt1::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    animation: ftRGB 5s linear infinite;
+}
+
 @keyframes ftRGB{
 
     0%{
@@ -323,6 +361,14 @@ button{
     inset: 5px;
     border-radius: 50%;
     background-image: url(https://github.com/denzysr.png);
+    background-size: cover;
+    z-index: 1;
+}
+.boxfotoctt1 span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background-image: url(./src/img_cards/foto7.jpg);
     background-size: cover;
     z-index: 1;
 }
@@ -608,6 +654,21 @@ button{
     z-index: 101;
     background-color: var(--wth);
     transition: 0.5s ease-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.trn-2 span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+    font-weight: 800;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .trn-2.is-active {
@@ -624,10 +685,55 @@ button{
     z-index: 101;
     background-color: var(--wth);
     transition: 0.5s ease-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.trn-3 span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+    font-weight: 800;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .trn-3.is-active {
     top: 0px;
+}
+
+.trn-4{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: -100%;
+    bottom: 0;
+    z-index: 101;
+    background-color: var(--wth);
+    transition: 0.5s ease-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.trn-4 span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+    font-weight: 800;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.trn-4.is-active {
+    right: 0px;
 }
 
 /* .ctnd{
@@ -678,4 +784,103 @@ button{
 
 .gpfotos1, .resumoH{
     visibility: hidden;
+}
+
+.spnTrn1 {
+    visibility: hidden;
+}
+
+.infoctt1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    flex-direction: column;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 50px;
+}
+
+h1, h2{
+    font-size: 3rem;
+    color: var(--txtColor);
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.h1ctt::before{
+    content:" 📧 ";
+    display: block;
+}
+
+.h2ctt::before{
+    content: " ✅ ";
+    display: block;
+}
+
+.form{
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+}
+
+.form label, .form input, .form textarea, .form button{
+    display: block;
+    width: 100%;
+}
+
+.form label{
+    color: var(--txtColor);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.form input, .form textarea{
+    font:inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea{
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.form input:hover, .form input:focus, .form textarea:hover, .form textarea:focus{
+    outline:none;
+    border-color: #d400d4;
+    box-shadow: 0 0 0 3px #920092;
+}
+
+.form button{
+    display: block;
+    padding: 1rem;
+    background: #800080;
+    color: var(--txtColor);
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    
+    transition: 0.3s;
+}
+
+.form button:hover, .form button:focus{
+    outline: none;
+    background: #d400d4;
 }

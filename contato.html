@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="shortcut icon" href="./src/icone.ico" type="image/x-icon">
+    <title>Adrian Mira</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="transition trn-4 is-active">
+        <span class="spnTrn1">Contact me.</span>
+    </div>
+    <header>
+        <nav>
+            <a class="logo" href="./index.html">About me</a>
+            
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                
+            </div>
+            <ul class="nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projetos.html">Projects</a></li>
+                <li><a href="./sobre.html">About me</a></li>
+                <li><a href="./contato.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="infoctt1">
+            <div class="boxfotoctt1">
+                <span></span>
+            </div>
+        <div class="txtctt1">
+            <br>
+            <h1 class="h1ctt">
+                <p>For jobs, use the form or the links below!</p>
+            </h1>
+        </div>
+        </div>
+      
+       <div class="formulario">
+        <form action="https://formsubmit.co/contatoadrianmira@gmail.com" method="POST" class="form">
+            <label for="name">Seu nome</label>
+            <input type="text" name="name" id="name" required>
+            <label for="name">Seu email para contato</label>
+            <input type="email" name="email" id="email" required>
+            <label for="name">Inteção</label>
+            <textarea name="message" placeholder="Resume aqui o projeto que deseja!" id="message" required></textarea>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+            <button type="submit">Send</button>
+       </form>
+       </div>
+        
+    </main>
+</body>
+
+<script src="./mobile-navbar.js"></script>
+    <script src="./main.js"></script>
+    
+</html>

@@ -32,7 +32,7 @@ sr.reveal('.area', {duration: 3000});
 sr.reveal('.boxfoto', {
     distance: '100px',
     origin: 'bottom',
-    duration: 2500,
+    duration: 2000,
 })
 
 sr.reveal('.boxfoto1', {
@@ -42,7 +42,7 @@ sr.reveal('.boxfoto1', {
 
 sr.reveal('.textoResumo', {
     easing: 'ease-in-out',
-    duration: 2500,
+    duration: 3000,
 })
 
 sr.reveal('.container_botoes', {duration:3000});
@@ -59,3 +59,7 @@ sr.reveal('.resumoH', {
     distance: '100px',
     origin: 'bottom',
     });
+sr.reveal('.spnTrn1', {
+    duration: 900,
+    easing: 'ease-in-out',
+});
